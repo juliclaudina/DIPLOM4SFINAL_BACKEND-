@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const permissionSchema = new mongoose.Schema({
-  name: { //puede ser en vez de name del permiso una key . Ej: PaisEliminar, PaisVer
+  name: { //puede ser en vez de name del permiso una key . Ej: SuperHeroeEliminar, SuperHeroeVer
     type: String,
     required: true,
     unique: true

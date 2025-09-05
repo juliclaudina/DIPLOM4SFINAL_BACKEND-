@@ -6,10 +6,10 @@ import path from 'path';
 
 // Permisos iniciales
 const initialPermissions = [
-  { name: 'read:paises', description: 'Leer países' },
-  { name: 'create:paises', description: 'Crear países' },
-  { name: 'update:paises', description: 'Actualizar países' },
-  { name: 'delete:paises', description: 'Eliminar países' }
+  { name: 'read:superheroes', description: 'Leer superhéroes' },
+  { name: 'create:superheroes', description: 'Crear superhéroes' },
+  { name: 'update:superheroes', description: 'Actualizar superhéroes' },
+  { name: 'delete:superheroes', description: 'Eliminar superhéroes' }
 ];
 
 // Roles iniciales con permisos
@@ -17,17 +17,17 @@ const initialRoles = [
     {
         name: 'user',
         description: 'Usuario básico',
-        permissions: ['read:paises']
+        permissions: ['read:superheroes']
     },
     {
         name: 'editor',
         description: 'Editor de contenido',
-        permissions: ['read:paises', 'create:paises', 'update:paises']
+        permissions: ['read:superheroes', 'create:superheroes', 'update:superheroes']
     },
     {
         name: 'admin',
         description: 'Administrador del sistema',
-        permissions: ['read:paises', 'create:paises', 'update:paises', 'delete:paises']
+        permissions: ['read:superheroes', 'create:superheroes', 'update:superheroes', 'delete:superheroes']
     }
 ];
 
